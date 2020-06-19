@@ -45,10 +45,10 @@ const Navigation = () => {
       <Link onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} to="/">
         HOME
       </Link>
-      <a className={`nav-link ${display?'visible':'hidden'}`} href="#mission">
+      <a onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} href="#mission">
         OUR MISSION
       </a>
-      <a className={`nav-link ${display?'visible':'hidden'}`} href="#services">
+      <a onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} href="#services">
         SERVICES
       </a>
       {/* <Link onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} to="/blog">
@@ -57,7 +57,7 @@ const Navigation = () => {
       <Link onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} to="/become-a-partner">
         BECOME A DRIVER
       </Link>
-      <a className={`nav-link ${display?'visible':'hidden'}`} href="#about-us">
+      <a onClick={()=>handleChange(!check)} className={`nav-link ${display?'visible':'hidden'}`} href="#about-us">
         ABOUT US
       </a>
     </nav>
