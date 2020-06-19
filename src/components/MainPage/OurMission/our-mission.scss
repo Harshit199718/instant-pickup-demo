@@ -1,0 +1,205 @@
+.our-mission-h2, .join-h2 {
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 47px;
+    line-height: 60px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.mission-desc-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-mission-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.mission-desc-container h3 {
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.mission-desc-container p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.mission-desc-container__text-container {
+    max-width: 930px;
+
+    text-align: left;
+}
+
+.read-more-link {
+    color: #8EAD28;
+}
+
+.sansara-image-container {
+    margin: auto;
+}
+
+
+@media (max-width: 768px){
+    .our-mission-container{
+        width: auto;
+        margin-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .our-mission-container div:first-child{
+        width: 100%;
+    }
+
+    .our-mission-container div:first-child h2{
+        font-size: 1.6rem;
+        line-height: normal;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .our-mission-container div:nth-child(2) .mission-desc-container div{
+        order: 0;
+        width: 30%;
+        margin: auto 0!important;
+    }
+
+    .our-mission-container div:nth-child(2) .mission-desc-container div img{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+    }
+
+    .our-mission-container div:nth-child(2) .mission-desc-container .mission-desc-container__text-container{
+        order: 1;
+        width: 70%;
+    }
+
+    .mission-desc-container__text-container h3{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .mission-desc-container__text-container p{
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .our-mission-container div:nth-child(2){
+        width: 100%;
+    }
+
+    .our-mission-container div:nth-child(3) h2{
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+@media (max-width:590px){
+
+    .our-mission-container div:nth-child(2) .mission-desc-container div{
+        margin: auto 0 auto 30px;
+    }
+
+    .our-mission-container div:nth-child(2) .mission-desc-container div img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .mission-desc-container__text-container h3{
+        font-size: 1.2rem;
+        line-height: normal;
+        margin-bottom: 12px;
+        padding: 0;
+    }
+
+    .mission-desc-container__text-container p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .our-mission-container div:nth-child(3) h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 510px){
+    .our-mission-container{
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    .our-mission-container .our-mission-h2{
+        padding-left: 3px!important;
+        font-size: 1.3rem!important;
+        position: relative;
+    }
+
+    .our-mission-h2::before{
+        content: ''!important;
+        width: 20px;
+        height: 20px;
+        background: #8EAD28;
+        position: absolute;
+        top: 14px;
+        left: -28px;
+        border-radius: 50%;
+        opacity: 0.2;
+    }
+
+    .our-mission-h2::after{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #8EAD28;
+        position: absolute;
+        top: 18px;
+        left: -23px;
+        border-radius: 50%;
+    }
+
+    .mission-desc-container__text-container h3{
+        font-size: 1.1rem;
+    }
+
+    .our-mission-container div:nth-child(3) h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 360px){
+    .our-mission-container{
+        margin-right: 12px;
+    }
+
+    .our-mission-container .our-mission-h2{
+        font-size: 1.1rem!important;
+    }
+
+    .mission-desc-container__text-container h3{
+        font-size: .9rem;
+    }
+
+    .our-mission-container div:nth-child(3) h2{
+        font-size: 1.1rem;
+    }
+}

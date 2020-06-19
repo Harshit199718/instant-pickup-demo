@@ -1,0 +1,52 @@
+.person-feedback-container {
+  width: 376px;
+  height: 216px;
+
+  margin-left: 2.5rem !important;
+  margin: 0.8rem auto 0.8rem auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.person-feedback-container p {
+  margin-top: 0.8rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  letter-spacing: 0.15px;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.photo-and-name-container {
+  display: flex;
+}
+
+.starts-container {
+  margin-left: 20px;
+}
+
+.stars {
+  display: flex;
+}
+
+.slider-feedbacks {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -55px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .slider-feedbacks .slick-track{
+    width: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+.form {
+    margin-left: 25px;
+
+    width: 496px;
+    height: 340px;
+
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.point-type {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.point-type h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0px;
+
+    letter-spacing: 0.15px;
+    text-align: start;
+
+    color: #000000;
+}
+
+.address-container {
+    display: flex;
+    align-items: center;
+
+    margin-top: -13px;
+}
+
+.address-container p {
+    padding-left: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.select-container {
+    text-align: start;
+    margin-left: 28px;
+}
+
+.select-container select {
+    width: 445px;
+    height: 46px;
+
+    padding-left: 12px;
+
+    background: #FFFFFF;
+    -webkit-appearance: none;
+    background-image: url(../../../content-constants/images/arrow_drop_down.svg);
+    background-repeat: no-repeat;
+    background-position: 418px;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: #BDBDBD;
+}
+
+.select-container {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+
+    margin-left: 26px;
+    margin-top: 14px;
+}
+
+.checkbox {
+    width: 16.5px;
+    height: 16.5px;
+
+    background: #DADADA;
+
+    visibility: visible !important;
+}
+
+.checkbox-container p {
+    margin-left: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+
+    color: #000000;
+}

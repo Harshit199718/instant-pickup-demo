@@ -1,0 +1,279 @@
+.first-step-container {
+  display: flex;
+  // margin-top: 24px;
+  padding-top: 0;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 696px;
+}
+
+//
+.location-and-links-container {
+  margin-left: 25px;
+}
+
+.location-description-container {
+  width: 451px;
+  height: 502px;
+
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.mapboxgl-map {
+  height: 332px;
+  width: 451px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary h3 {
+  padding-left: 22px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.edit-text {
+  padding-left: 9px;
+  padding-right: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  color: #3986ee;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+}
+
+.way-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  text-align: start;
+}
+
+.way-container__place {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.way-container__address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.arrow-container {
+  margin-top: 48px;
+  margin-right: 8px;
+}
+
+//
+.btns-container-first {
+  margin-top: 20px;
+}
+
+.back-btn-in-first {
+  padding-left: 0 !important;
+  text-decoration: none;
+}
+
+.next-step-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 195px;
+  height: 66px;
+
+  color: #000000;
+  background: #8ead28;
+  border-radius: 34.5px;
+
+  text-decoration: none;
+}
+
+.next-step-button p {
+  margin-right: 10px;
+}
+
+.mapboxgl-ctrl-top-left {
+  display: none !important;
+}
+
+.contact-information {
+  min-width: 453px;
+}
+
+.first-step-container {
+  .date-container {
+    min-width: 456px;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+
+.addn-cont {
+  min-height: 240px;
+  width: 453px;
+  .addn-row {
+    min-width: 420px;
+  }
+}
+
+.this-adjust {
+  margin-top: 0 !important;
+}
+
+.way-container__place .fa{
+  display: none;
+}
+
+
+@media (max-width: 768px){
+  .first-step-container{
+    margin: 0!important;
+  }
+
+  .way-container__place .fa{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .way-container__place .fa-compass{
+    color: blue;
+  }
+
+  .way-container__place .fa-map-marker{
+    color: red;
+  }
+
+  .first-step-container .date-container{
+    margin: 0;
+    width: 100%;
+  }
+
+  .date-container{
+    margin: 0;
+    width: 100%;
+    min-width: auto!important;
+  }
+
+  .date-container .time-range-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .choose-delivery-container .choose-van-container{
+    height: auto!important;
+  }
+
+  .choose-delivery-container{
+    padding: 0!important;
+  }
+
+  .contact-information__h5-container{
+    border: none;
+  }
+
+  .contact-information .contact-information__h5-container h5{
+    line-height: normal!important;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .checkbox-container-in-payment{
+    font-size: 12px;
+  }
+
+  .addn-cont{
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .addn-cont .additional-information-container__header h3{
+      margin: 0;
+  }
+
+  .select-additional-service-container .addn-row{
+    width: 100%!important;
+    min-width: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .select-additional-service-container .addn-row div{
+    width: auto;
+    margin: 10px 0!important;
+  }
+
+  .select-additional-service-container .addn-row div h6{
+    padding: 0;
+    text-align: left;
+  }
+
+  .select-additional-service-container .addn-row div:nth-child(2){
+    margin: 0!important;
+    padding: 0!important;
+  }
+}
+
+@media (max-width: 576px){
+  .way-container .arrow-container{
+    display: none;
+  }
+
+  .way-container .way-container__place{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 415px){
+  .select-additional-service-container .addn-row div h6{
+    font-size: 12px;
+  }
+}

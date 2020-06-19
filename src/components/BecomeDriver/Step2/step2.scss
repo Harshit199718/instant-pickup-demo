@@ -1,0 +1,218 @@
+.drivf {
+  border-radius: 200px;
+}
+
+.upload-docs-1 {
+  margin-top: 1.5rem;
+  margin-left: 1.8rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* identical to box height */
+  letter-spacing: 0.15px;
+
+  color: #000000;
+
+  .upload-docs-2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.15px;
+
+    color: #000000;
+  }
+}
+
+.custom-file {
+  label {
+    cursor: pointer;
+    width: 186px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #fffefe;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    color: #000000;
+  }
+
+  #upload-1,
+  #upload-2,
+  #upload-3,
+  #upload-4,
+  #upload-5,
+  #upload-6 {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.subdoc-appln-btn {
+  min-width: 219px;
+}
+.req-box {
+  width: 220px;
+  height: 294px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 1rem auto;
+  .req-img {
+    margin-top: 42px;
+    height: 60px;
+  }
+}
+
+.learnm {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  /* 1 */
+  color: #8ead28;
+}
+
+.req-flex {
+  margin: 5rem 12rem;
+}
+
+@media (max-width: 768px){
+  .bd-step-two-container .become-a-partner{
+    font-size: 1.6rem;
+    padding-bottom: 0;
+  }
+
+  .bd-step-two-container .row .upload-docs-1{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 0;
+  }
+
+  // .become-partner-2-back-btn>a{
+  //   display: none;
+  // }
+
+  .become-partner-2-back-btn .applcn-btn{
+    width: auto;
+    height: auto;
+    min-width: auto;
+    margin: 0;
+    margin-top: 20px;
+    padding: 14px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
+
+  .become-partner-2-back-btn .applcn-btn a{
+    line-height: normal;
+  }
+  .become-partner-2-back-btn{
+    display: inline-block!important;
+  }
+}
+
+@media (max-width: 576px){
+  .my-row{
+    padding: 0 12px;
+    .my-col{
+      min-height: 100px;
+    }
+  }
+
+  .req-box{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .req-img{
+      width: 100%;
+      height: auto;
+      margin-top: 16px;
+      img{
+        width: 30%;
+        height: auto;
+        max-height:100% ;
+      }
+    }
+
+    .custom-file{
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-bottom: 10px;
+
+      label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px auto;
+        line-height: normal;
+        padding: 10px 10%;
+        font-size: 3vw;
+        img{
+          margin: 0;
+        }
+      }
+      
+      input{
+        width: 70%;
+        height: 85%;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 440px){
+
+  .my-row{
+    .my-col:nth-child(odd){
+      padding-right: 5px;
+    }
+
+    .my-col:nth-child(even){
+      padding-left: 5px;
+    }
+  }
+
+  .req-box{
+    padding: 0 6px;
+    h6{
+      padding-bottom: 0;
+    }
+  }
+}

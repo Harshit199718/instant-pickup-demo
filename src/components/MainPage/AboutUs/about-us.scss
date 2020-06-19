@@ -1,0 +1,271 @@
+.about-us-container {
+    background: #8EAD28;
+
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.about-us-container__container {
+    width: 85%;
+
+    margin: auto;
+}
+
+.link-container-container {
+    padding-top: 1px;
+}
+
+.link-container {
+    width: 60px;
+    height: 60px;
+
+    margin-left: 100%;
+    margin-top: 30px;
+
+    border: 1px solid #FFFFFF;
+}
+
+.link-container img {
+    padding-top: 20px;
+}
+
+.about-us-h3-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.about-us-advantages {
+    max-width: 553px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about-us-more-info {
+    margin-left: 3%;
+}
+
+.about-us-more-info h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+}
+
+.about-us-more-info p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+}
+
+.info-about-us {
+    display: flex;
+
+    text-align: left;
+}
+
+.discover-container {
+    margin-left: 5%;
+}
+
+.footer {
+    display: flex;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+
+    background: #8EAD28;
+}
+
+.footer .social-icons{
+    display: none;
+}
+
+.rights-text-container {
+    margin-left: 7%;
+}
+
+
+@media (max-width: 768px){
+
+    .about-us-container{
+        display: flex;
+        justify-content: end;
+    }
+
+    .about-us-container__container{
+        width: 80%;
+        margin: 0;
+        margin-left: 50px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-container__container .about-us-h3-text{
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.6rem;
+    }
+
+    .about-us-container__container>div{
+        width: 100%;
+    }
+
+    .info-about-us{
+        display: block;
+        padding-left: 20px;
+    }
+
+    .about-us-advantages p{
+        font-size: 1rem;
+    }
+
+    .info-about-us .about-us-more-info{
+        width: 50%;
+        margin: 0;
+        padding-left: 14px;
+        display: inline-block!important;
+        vertical-align: top;
+    }
+
+    .about-us-more-info h5{
+        font-size: 1.6rem;
+    }
+
+    .about-us-more-info p{
+        font-size: 1.2rem;
+    }
+
+    .about-us-more-info h5, .about-us-more-info p{
+        line-height: normal;
+    }
+
+    .about-us-more-info:last-child p:last-child{
+        font-size: .8rem;
+    }
+
+    .about-us-more-info span{
+        display: block;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer div{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .footer .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 20px 50px;
+    }
+
+    .footer .social-icons .fa{
+        font-size: 1.6rem;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:590px){
+    .link-container{
+        display: none;
+    }
+
+    .footer .social-icons .fa{
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 510px){
+    .about-us-container__container{
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    .about-us-container__container .about-us-h3-text{
+        font-size: 1.3rem;
+        padding-left: 3px;
+        margin-bottom: 0;
+    }
+
+    .about-us-container__container .info-about-us{
+        padding-left: 3px;
+    }
+
+    .info-about-us .about-us-advantages p{
+        font-size: .8rem;
+    }
+
+    .info-about-us .about-us-more-info{
+        padding-left: 0;
+    }
+
+    .about-us-more-info h5{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    
+
+    .about-us-more-info p{
+        font-size: 1rem;
+        padding-bottom: 0;
+        margin-bottom: 5px;
+    }
+
+    .about-us-more-info:last-child p:last-child{
+        font-size: .6rem;
+    }
+
+    .footer{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .footer .social-icons, .footer .rights-text-container{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 360px){
+    .about-us-more-info:last-child p:last-child{
+        font-size: 10px;
+    }
+}

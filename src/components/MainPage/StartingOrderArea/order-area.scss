@@ -1,0 +1,309 @@
+.order-and-carousel-container {
+  display: flex;
+}
+
+.order-container {
+  padding-top: 20px;
+  padding-left: 8%;
+}
+
+.h2-container {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27.1744px;
+  line-height: 51px;
+  letter-spacing: 0.131408px;
+
+  text-align: start;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.eco-refresher-container {
+  display: flex;
+
+  width: 415px;
+  height: 71px;
+
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 8.7605px;
+}
+
+.eco-refresher-container__text-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 17px;
+
+  text-align: start;
+}
+
+.eco-refresher-container__h5-container {
+  margin-top: -7px;
+
+  height: 45px;
+}
+
+.eco-refresher-container h5 {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21.0252px;
+  line-height: 0px;
+  letter-spacing: 0.131408px;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.eco-refresher-container a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.0168px;
+  line-height: 16px;
+
+  text-decoration-line: underline;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.eco-refresher-container__img-container {
+  line-height: 110px;
+  padding-left: 13px;
+}
+
+.illustration-container {
+  text-align: end;
+}
+
+.start-cacl-btn {
+  width: 417px;
+  height: 49.06px;
+
+  margin-top: 7px;
+
+  background: #8ead28;
+  border: 0.87605px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 26.2815px;
+}
+
+.start-cacl-btn a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.0168px;
+  line-height: 42px;
+
+  letter-spacing: 0.131408px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.text-before-filling {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.0168px;
+  line-height: 23px;
+
+  letter-spacing: 0.131408px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.select-type-container {
+  margin-top: 9px;
+
+  text-align: start;
+}
+
+.select-type-of-transportation {
+  padding-left: 20px;
+
+  width: 417px;
+  height: 49.06px;
+  background: #ffffff;
+  border: 0.87605px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 4.38025px;
+
+  background-image: url(../../../content-constants/images/arrow_drop_down.svg);
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  background-position: 382px;
+
+  outline: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.0168px;
+  line-height: 16px;
+
+  letter-spacing: 0.131408px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #bdbdbd;
+}
+
+.input-points-container {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 7px;
+}
+
+.point input {
+  width: 203.24px;
+  height: 49.06px;
+
+  margin-right: 9px;
+  padding-left: 40px;
+
+  background: #ffffff;
+
+  border: 0.87605px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 4.38025px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.0168px;
+  line-height: 16px;
+
+  letter-spacing: 0.131408px;
+
+  color: #000000;
+
+  outline: none;
+}
+
+.pickup input {
+  background-image: url(../../../content-constants/images/pickup.png);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.dropoff input {
+  background-image: url(../../../content-constants/images/dropoff.png);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.point {
+  position: absolute;
+}
+
+.doff {
+  padding-left: 212px;
+}
+
+.react-geocoder-results {
+  position: absolute;
+  background: white;
+  z-index: 999;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px){
+  .order-and-carousel-container{
+    flex-direction: column;
+  }
+
+  .illustration-container{
+    order: 0;
+    height: 50vh;
+    margin-top: -70px;
+    z-index: -1;
+  }
+
+  .illustration-container img{
+    height: 100%;
+    width: 115%;
+  }
+
+  .order-container{
+    order: 1;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-container>*{
+    width: 100%;
+  }
+
+  .order-container .h2-container{
+    display: none;
+  }
+
+  .order-container .start-cacl-btn{
+    border-radius: 4px;
+  }
+
+  .eco-refresher-container{
+    width: 100%;
+    height: auto;
+    padding:10px 0;
+    align-items: center;
+  }
+
+  .eco-refresher-container__img-container{
+    line-height: normal;
+  }
+
+  .eco-refresher-container__h5-container{
+    margin: 0;
+    height: auto;
+  }
+
+  .eco-refresher-container h5{
+    line-height: normal;
+    margin: 0;
+    margin-top: 0!important;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .eco-refresher-container__text-container a{
+    line-height: normal;
+    font-size: .6rem;
+  }
+
+  .select-type-container{
+    margin-top: 20px;
+  }
+
+  .select-type-container select{
+    width: 100%;
+    background-position: 95%;
+
+  }
+
+  .input-points-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .react-geocoder-results, .point{
+    position: static;
+  }
+
+  .react-geocoder input{
+    width: 100%;
+  }
+
+  .doff{
+    margin-top: 10px;
+    padding: 0;
+  }
+}

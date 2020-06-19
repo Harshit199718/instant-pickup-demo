@@ -1,0 +1,157 @@
+.our-cities-container {
+    height: 519px;
+
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    background-image: url(../../../content-constants/images/map.png);
+}
+
+.our-cities-container__h2-container {
+    padding-top: 1px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.our-cities-hours {
+    max-width: 476px;
+    height: 258px;
+
+    margin: auto;
+
+    background: #F9F9F9;
+}
+
+.our-cities-hours h5 {
+    padding-top: 20px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28.16px;
+    line-height: 35px;
+    letter-spacing: 0.088px;
+
+    color: #000000;
+}
+
+.our-cities-hours p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.our-cities-line{
+    display: none;
+    width: 100%;
+    height: .1px;
+    background: #000;
+}
+
+@media (max-width:768px){
+    .our-cities-container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .our-cities-container__h2-container{
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .our-cities-container__h2-container h2{
+        font-size: 1.6rem;
+    }
+
+    .our-cities-hours{
+        width: 80%;
+        height: auto;
+        margin: 10px 0 10px 0;
+        margin-right: 0;
+        margin-left: 50px;
+        padding: 10px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .our-cities-hours h5{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 590px){
+    
+    .our-cities-hours{
+        padding: 5px 10px;
+    }
+
+    .our-cities-hours h5, .our-cities-hours p{
+        text-align: left;
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 0;
+        line-height: 1.6;
+    }
+
+    .our-cities-hours p{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .our-cities-hours p:nth-child(1){
+        border-bottom: 1px solid #000!important;
+    }
+
+    .our-cities-line{
+        display: block;
+    }
+
+    .our-cities-hours p span{
+        display: block;
+    }
+}
+
+@media (max-width: 510px){
+    .our-cities-container{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .our-cities-container__h2-container{
+        margin-left: 0;
+    }
+
+    .our-cities-container__h2-container h2{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .our-cities-hours{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+
+    .our-cities-hours h5{
+        font-size: 1.4rem;
+    }
+
+    .our-cities-hours p{
+        font-size: 1rem;
+    }
+}

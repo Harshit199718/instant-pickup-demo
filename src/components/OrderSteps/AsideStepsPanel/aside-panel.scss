@@ -1,0 +1,89 @@
+.h3-container {
+  height: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.steps-line-container {
+  margin-left: 36px;
+
+  flex-direction: column;
+  width: 173px;
+  height: 528px;
+
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.numbers-container {
+  margin-top: -40px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 492px;
+}
+
+.one-step-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-step-container h5 {
+  width: 77px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.one-step-container p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 6px;
+
+  text-align: center;
+  letter-spacing: 0.15px;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding-top: 0.8rem;
+  background: #8ead28;
+  z-index: 2;
+}
+
+.hr {
+  position: relative;
+  top: 44px;
+  left: -19px;
+
+  width: 80px;
+
+  transform: rotate(90deg);
+}
+
+.passive {
+  background: #f2f2f2;
+  color: #bdbdbd;
+}

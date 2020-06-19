@@ -1,0 +1,80 @@
+.blog-heading {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.15px;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h3 {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.15px;
+
+  .together-green {
+    color: #8ead28;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-head {
+    display: none;
+  }
+}
+
+.req-flex {
+  margin: 5rem 12rem;
+}
+
+.blogcard {
+  .card-body {
+    padding-left: 0;
+  }
+
+  width: 18rem;
+  border: none;
+  .category {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+
+    /* identical to box height, or 170% */
+    text-align: left;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .card-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* or 150% */
+
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .read-more {
+    color: #8ead28;
+    margin-right: 1rem;
+  }
+}
+
+.blog-flex {
+  margin: 1rem 1.5rem;
+}
+
+.view-all-btn {
+  text-align: center;
+}

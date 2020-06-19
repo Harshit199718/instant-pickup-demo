@@ -1,0 +1,361 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+// Booking details
+.booking-details-container {
+    width: 442px;
+    height: 504px;
+
+    margin-right: 24px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.location-details {
+    border-bottom: 1px solid #DADADA;
+}
+
+.booking-details-container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-details-container__header h5 {
+    padding-left: 28px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.edit-in-payment {
+    padding-right: 28px;
+}
+
+.points-in-payment {
+    margin-top: -45px;
+    padding-left: 28px;
+    padding-right: 7%;
+}
+
+.points-in-payment p {
+    line-height: unset;
+}
+
+.contact-info-container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.contact-info-container__header h6, .address-info-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+
+    text-align: left;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-info-container__header p, .blue-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.15px;
+
+    color: #3986EE;
+}
+
+.checkbox-container-in-payment {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-input {
+    visibility: visible !important;
+}
+
+.email-and-address-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: -23px;
+
+    height: 130px;
+}
+
+.email-and-address-container input {
+    width: 85%;
+    height: 50px;
+
+    padding-left: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.address-info-container {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.checkbox-container-address {
+    margin-top: -30px;
+}
+
+// Payment details
+.payment-details-container {
+    width: 393px;
+    height: 435px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.payment-details-container__header {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #DADADA;
+}
+
+.payment-details-container__header__text-container {
+    margin-left: 30px;
+}
+
+.payment-details-container__header h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.payment-details-container__header__total-sum-text {
+    margin-top: -20px;
+    margin-left: -4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.payment-details-container__header__total-sum-text span {
+    padding-left: 6px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: #3986EE;
+}
+
+.edit-padding {
+    margin-top: -5px;
+}
+
+.form-payment {
+    display: flex;
+    justify-content: space-around;
+
+    width: 78%;
+
+    margin: 22px auto;
+}
+
+.payment-variant {
+    width: 137px;
+    height: 42px;
+
+    padding-left: 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+
+    text-align: left;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.payment-variant input {
+    margin-right: 12px;
+}
+
+.card-info {
+    width: 90%;
+    height: 50px;
+
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: auto;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: #DADADA;
+}
+
+.expiration-date-and-cvv {
+    display: flex;
+    justify-content: space-around;
+
+    width: 88%;
+}
+
+.expiration-date-and-cvv__input-container input,
+.cvc-input {
+    width: 106px;
+    height: 50px;
+
+    padding-left: 20px;
+    padding-top: 14px;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: #DADADA;
+}
+
+.card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 171px;
+
+    margin-top: 13px;
+}
+
+.proceed-payment-btn {
+    width: 341px;
+
+    margin: 20px auto;
+}
+
+.problems-number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 63%;
+
+    margin: 0 auto;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.name-info {
+    padding-top: 0px;
+    &::-webkit-input-placeholder { color: #DADADA; }
+}
+
+@media (max-width: 768px) {
+    .proceed-payment-btn{
+        width: auto!important;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proceed-payment-btn p{
+        margin: 0;
+    }
+
+    .payment-details-container .problems-number{
+        margin: 10px;
+        width: auto;
+    }
+}

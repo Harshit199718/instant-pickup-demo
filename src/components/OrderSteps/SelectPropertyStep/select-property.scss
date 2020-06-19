@@ -1,0 +1,371 @@
+.first-step-container {
+  display: flex;
+  margin-top: 24px;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 696px;
+}
+
+//
+.location-and-links-container {
+  margin-left: 25px;
+}
+
+.location-description-container {
+  width: 451px;
+  height: 502px;
+
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.mapboxgl-map {
+  height: 332px;
+  width: 451px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary h3 {
+  padding-left: 22px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.edit-text {
+  padding-left: 9px;
+  padding-right: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  color: #3986ee;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+}
+
+.way-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  text-align: start;
+}
+
+.way-container__place {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.way-container__address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+.arrow-container {
+  margin-top: 48px;
+  margin-right: 8px;
+}
+
+//
+.btns-container-first {
+  margin-top: 20px;
+}
+
+.back-btn-in-first {
+  padding-left: 0 !important;
+  text-decoration: none;
+}
+
+.next-step-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 195px;
+  height: 66px;
+
+  color: #000000;
+  background: #8ead28;
+  border-radius: 34.5px;
+
+  text-decoration: none;
+}
+
+.next-step-button p {
+  margin-right: 10px;
+}
+
+.mapboxgl-ctrl-top-left {
+  display: none !important;
+}
+
+.hr-sm{
+  display: none;
+}
+
+
+@media (max-width: 768px){
+
+  .first-step-container{
+    margin: 0;
+  }
+
+  .steps-line-container{
+    width: 100%!important;
+    height: auto!important;
+    margin: 0!important;
+    padding: 10px 0;
+    background: #fff;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0!important;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
+
+  .steps-line-container h5{
+    display: none;
+  }
+
+  .steps-line-container .numbers-container{
+    margin: auto;
+    width: 70%;
+    flex-direction: row;
+    height: auto!important;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .circle{
+    position: relative;
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .one-step-container .circle p{
+    margin: 0!important;
+    padding: 0;
+  }
+
+  .one-step-container .circle hr{
+    display: none;
+  }
+
+  .hr-sm{
+    display: block;
+    width: 80%;
+    height: 3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .forms-container .form{
+    width: 100%;
+    margin: 0;
+  }
+
+  .forms-container .form .select-container{
+    margin-right: 28px;
+  }
+
+  .forms-container .form .select-container select{
+    width: 100%;
+    background-position: 90%;
+  }
+
+  .location-and-links-container{
+    width: 100%;
+    margin-left: 0!important;
+  }
+
+  .location-description-container{
+    margin: 0;
+    width: 100%!important;
+    height: auto!important;
+  }
+
+  .location-description-container .mapboxgl-map{
+    margin: 0;
+    width: 100%;
+  }
+
+  .location-description-container .mapboxgl-map canvas{
+    width: 100%!important;
+  }
+
+  .location-and-links-container .location-description-container .summary h3{
+    padding-left: 16px;
+  }
+
+  .location-and-links-container .location-description-container .way-container{
+    padding: 0 16px;
+  }
+
+  .location-and-links-container .btns-container-first{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .forms-container .form .checkbox-container p{
+    margin: 0 0 0 10px;
+  }
+
+  .btns-container .next-step-button{
+    width: 100%;
+    border-radius: 6px;
+    margin: 10px;
+  }
+
+  .btns-container .next-step-button img{
+    display: none;
+  }
+
+  .btns-container .back-btn-container{
+    padding: 0;
+    margin: 0;
+    width: 0;
+  }
+
+  .btns-container .back-btn-container img{
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .btns-container .back-btn-container .back_text{
+    display: none;
+  }
+}
+
+@media (max-width: 590px){
+  .steps-line-container{
+    padding: 20px 0;
+  }
+
+  .forms-container{
+    margin-bottom: 40px;
+  }
+
+  .first-step-container{
+    position: relative;
+  }
+
+  .steps-line-container .numbers-container{
+    width: 60%;
+  }
+
+  .circle{
+    width: 30px!important;
+    height: 30px!important;
+  }
+
+  .one-step-container .circle p{
+    font-size: 16px!important;
+
+  }
+
+  .forms-container .form .select-container, 
+  .forms-container .form .point-type, 
+  .forms-container .form .checkbox-container{
+    margin: 20px 16px;
+  }
+
+  .forms-container .form .select-container p{
+    display: none;
+  }
+
+  .location-and-links-container .btns-container-first{
+    margin: 0;
+  }
+
+  .location-and-links-container .btns-container-first{
+    width: 100%;
+    margin: 0 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 5px #eBeBeB,0 -2px 5px #eBeBeB;
+  }
+
+  .next-step-button{
+    margin: 10px;
+    width: 100%!important;
+    border-radius: 6px!important;
+    text-align: center;
+  }
+
+  .location-description-container .way-container{
+    flex-direction: column;
+  }
+
+  .location-description-container .way-container div p span{
+    display: none;
+  }
+
+  .location-description-container .way-container div p .fa{
+    font-size: 14px;
+  }
+
+  .location-description-container .way-container div:nth-child(1) p .fa{
+    color: blue;
+  }
+
+  .location-description-container .way-container div:nth-child(3) p .fa{
+    color: red;
+  }
+  
+}
+
+@media (max-width: 360px){
+  .btns-container-first .next-step-button img{
+    display: none;
+  }
+}

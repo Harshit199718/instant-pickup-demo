@@ -1,0 +1,91 @@
+.main-page {
+    position: relative;
+}
+
+.side-line {
+    position: absolute;
+    top: 460px;
+    left: 39px;
+    
+    border-left: 2px dashed rgba(0, 0, 0, 0.3);; 
+    // height: 500vh;  
+    bottom: 0;
+}
+
+.car {
+    position: fixed;
+    left: 13px;
+    top: 430px;
+
+    z-index: 5;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: 400ms;
+}
+
+.circles-container {
+    position: absolute;
+
+    left: 8px;
+    top: 400px;
+}
+
+.big-circle {
+    width: 63px;
+    height: 63px;
+
+    background: #8EAD28;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.little-circle {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    width: 35px;
+    height: 35px;
+
+    background: #8EAD28;
+    border-radius: 50%;
+    opacity: 1;
+} 
+
+.circle-second {
+    top: 860px;
+}
+
+.circle-third {
+    top: 1830px;
+}
+
+.circle-four {
+    top: 3260px;
+}
+
+.circle-five {
+    top: 6260px;
+}
+
+@media (max-width: 1025px){
+    .car{
+        display: none;
+    }
+
+    .side-line{
+        top: calc(100vh + 60px);
+    }
+}
+
+@media (max-width: 768px) {
+    .side-line{
+        left: 12px;
+    }
+    .circles-container{
+        display: none;
+    }
+}
+
