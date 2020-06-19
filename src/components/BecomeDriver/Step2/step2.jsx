@@ -267,7 +267,7 @@ export default class BDTwo extends Component {
               info@instantpickup.delivery
             </span>
           </div>
-          <div className="back-btn-container become-partner-2-back-btn">
+          <div className="back-btn-container become-partner-2-back-btn mx-auto">
             <Link to={'/become-a-partner-step-one'}>
               <img
                 src={arrowBack}
