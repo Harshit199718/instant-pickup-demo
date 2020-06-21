@@ -119,7 +119,7 @@
     }
 
     .algorithm-container__second-block img{
-        width: 22%;
+        width: 100%;
         height: auto;
         align-self: center;
         
@@ -185,10 +185,10 @@
 
 @media (max-width: 590px){
     
-    .algorithm-container__second-block img{
-        width: 30%;
-        height: auto;
-    }
+    // .algorithm-container__second-block img{
+    //     width: 30%;
+    //     height: auto;
+    // }
 
     .algorithm-container__second-block .details{
         width: 70%;

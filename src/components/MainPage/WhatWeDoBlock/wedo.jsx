@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './wedo.scss';
 
 import van from '../../../content-constants/images/vanicon.png';
 import currency from '../../../content-constants/images/currency.png';
 import iphone from '../../../content-constants/images/iphone.svg';
+import steps from '../../../content-constants/images/steps.gif';
 import location from '../../../content-constants/images/location.png';
 import clock from '../../../content-constants/images/clock.png';
 
 const WeDoBlock = () => {
+	const [img, setImg] = useState(window.innerWidth<768?steps:iphone)
+
+	React.useEffect(() => {
+		function handleResize() {
+		  window.innerWidth<=768?setImg(steps):setImg(iphone)
+		}
+		window.addEventListener('resize', handleResize)
+	  },[])
     return (
 			<div className="we-do-block-container">
 				<div>
@@ -43,7 +52,7 @@ const WeDoBlock = () => {
 						</div>
 					</div>
 					<div className="algorithm-container__second-block">
-						<div className="details">
+						{/* <div className="details">
 							<ul className="we-do-list">
 								<li>Enter Your Destination</li>
 								<li>Select the Van Size You Need</li>
@@ -52,8 +61,8 @@ const WeDoBlock = () => {
 								<li>Review Your Booking</li>
 								<li>Place Your Order</li>
 							</ul>
-						</div>
-						<img src={iphone} alt="" />
+						</div> */}
+						<img src={img} alt="" />
 					</div>
 					<div className="algorithm-container__third-block">
 						<div className="algorithm-container__advice-container">
