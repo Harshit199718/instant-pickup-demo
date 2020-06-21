@@ -30,9 +30,9 @@ const MainPage = () => {
         <div className="car">
           <img src={car} height="151" id="car" alt="" />
         </div>
-        <div>
+        {/* <div>
           <Carousel />
-        </div>
+        </div> */}
         <div className="circles-container circle-second">
           <div className="big-circle"></div>
           <div className="little-circle"></div>
