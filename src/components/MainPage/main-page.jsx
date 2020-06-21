@@ -22,7 +22,11 @@ const MainPage = () => {
           <div className="big-circle"></div>
           <div className="little-circle"></div>
         </div>
-        <div className="side-line"></div>
+        <div className="side-line">
+        <div className="car-sm">
+          <img src={car} height="151" id="car" alt="" />
+        </div>
+        </div>
         <div className="car">
           <img src={car} height="151" id="car" alt="" />
         </div>
