@@ -8,12 +8,17 @@ import {
 } from "../MainPage/StartingOrderArea/order-area";
 import Geocoder from 'react-mapbox-gl-geocoder'
 
+import DatePicker from "react-datepicker";
+ 
+import "react-datepicker/dist/react-datepicker.css";
+
 import van1 from "../../content-constants/images/van1.jpg";
 import van2 from "../../content-constants/images/van2.jpg";
 import weightImg from "../../content-constants/images/weightImg.svg";
 import ukImg from "../../content-constants/images/ukImg.png";
 import mapboxgl from "mapbox-gl";
 import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
+
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaW5zdGFudHBpY2t1cDEiLCJhIjoiY2s0azB4d2dqMTF1aDNlbnR1NW13dzRlYSJ9.bpI5rXZol2w7bpeNgI2rEQ";
@@ -39,16 +44,6 @@ mapboxgl.accessToken =
                 <div className="enter-location pick-location">
                   <h5>{props.inputTitle} </h5>
                   <input {...props} type="text" placeholder='ENTER LOCATION'/>
-                  {/* <select name="pickSelect" id="" className="pick-select">
-                    <option disabled selected value="">
-                      Enter Location
-                    </option>
-                    <option value="">option 1</option>
-                    <option value="">option 2</option>
-                    <option value="">option 3</option>
-                    <option value="">option 4</option>
-                    <option value="">option 5</option>
-                  </select> */}
                   <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
               </div>
@@ -67,9 +62,16 @@ class JourneyDetails extends Component {
       imageUrl:'',
       imageText:true,
       buttonText:'UPLOAD IMAGE',
-      viewport: {}
+      viewport: {},
+      startDate: Date.now()
     }
   }
+
+  handleDateChange = date => {
+    this.setState({
+      startDate: date
+    });
+  };
 
   handleImageUpload = (e) =>{
     this.setState({
@@ -139,29 +141,6 @@ class JourneyDetails extends Component {
                 inputComponent={(props) => <MyInput {...props} inputTitle='PICK UP'/>}
                 queryParams={queryParams}
               />
-            {/* <div className="select">
-              <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <div className="enter-location pick-location">
-                  <h5>PICK UP</h5>
-                  
-                  <select name="pickSelect" id="" className="pick-select">
-                    <option disabled selected value="">
-                      Enter Location
-                    </option>
-                    <option value="">option 1</option>
-                    <option value="">option 2</option>
-                    <option value="">option 3</option>
-                    <option value="">option 4</option>
-                    <option value="">option 5</option>
-                  </select>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div>
-                <span>+</span>
-              </div>
-            </div> */}
             <h5>EDIT ADDRESS</h5>
             <Geocoder
                 {...mapAccess}
@@ -173,46 +152,17 @@ class JourneyDetails extends Component {
                 inputComponent={(props) => <MyInput {...props} inputTitle='DROP OFF'/>}
                 queryParams={queryParams}
               />
-            {/* <div className="select">
-              <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <div className="enter-location drop-location">
-                  <h5>DROP OFF</h5>
-                  
-                  <select name="pickSelect" id="" className="pick-select">
-                    <option disabled selected value="">
-                      Enter Location
-                    </option>
-                    <option value="">option 1</option>
-                    <option value="">option 2</option>
-                    <option value="">option 3</option>
-                    <option value="">option 4</option>
-                    <option value="">option 5</option>
-                  </select>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div>
-                <span>+</span>
-              </div>
-            </div> */}
+           
             <h5>EDIT ADDRESS</h5>
             <div className="select">
               <div>
                 <i class="fa fa-calendar-o" aria-hidden="true"></i>
                 <div className="enter-location date-of-journey">
                   <h5>DATE OF JOURNEY</h5>
-                  {/* <select name="pickSelect" id="" className="pick-select">
-                    <option disabled selected value="">
-                      ASAP
-                    </option>
-                    <option value="">option 1</option>
-                    <option value="">option 2</option>
-                    <option value="">option 3</option>
-                    <option value="">option 4</option>
-                    <option value="">option 5</option>
-                  </select> */}
-                  <input type="text" placeholder='ASAP'/>
+                  <DatePicker
+        selected={this.state.startDate}
+        onChange={this.handleDateChange}
+      />
                   <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-.react-geocoder{
+.journey-details_container .react-geocoder{
     width: 100%;
     position: relative;
 }
@@ -100,8 +100,12 @@
     align-items: center;
 }
 
-.journey-details_container .select:last-child>div:first-child i{
-    width: 15%;
+.journey-details_container .select:nth-child(6)>div:first-child>i{
+    width: 12%;
+}
+
+.journey-details_container .select:nth-child(6)>div:first-child>div{
+    width: 88%;
 }
 
 .journey-details_container .select>div:nth-child(2){
@@ -144,6 +148,7 @@
     outline: none;
     font-weight: 500;
     font-size: 1em;
+    background: none;
 }
 
 .journey-details_container .select>div:first-child .enter-location input::placeholder{
@@ -314,7 +319,8 @@
 }
 
 .input-for-email-and-mobile .input-for-mobile img{
-    width: 15px;
+    width: 16px;
+    height: 25px;
 }
 
 .input-for-email-and-mobile .input-for-mobile span{
@@ -644,6 +650,10 @@
 
     .input-for-email-and-mobile .input-for-email{
         border-bottom: 2px solid #DEDEDE;
+    }
+
+    .input-for-email-and-mobile .input-for-mobile{
+        border: none;
     }
 
     .location-and-book-now_container{
