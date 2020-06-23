@@ -16,6 +16,7 @@ import BecomeDriver from './components/BecomeDriver'
 import BDOne from './components/BecomeDriver/Step1'
 import BDTwo from './components/BecomeDriver/Step2'
 import Blog from './components/Blog'
+import JourneyDetails from './components/JourneyDetails'
 // import AboutUs from './components/MainPage/AboutUs/about-us'
 
 function App(props) {
@@ -62,6 +63,11 @@ function App(props) {
               exact
               path="/become-a-partner-step-two"
               render={() => <BDTwo />}
+            />
+            <Route
+              exact
+              path="/journey-details"
+              render={() => <JourneyDetails/>}
             />
           </Switch>
         </div>
