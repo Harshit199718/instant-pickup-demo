@@ -214,7 +214,13 @@ class JourneyDetails extends Component {
           </div>
 
           <div className="contact-details_container">
-            <h2 className="contact-details-header">Contact Details</h2>
+            <h2 className="contact-details-header">
+              Contact Details
+              <span>ALREADY A MEMBER? SIGN IN
+              <i class="fa fa-plus-circle ml-2" aria-hidden="true"></i>
+              </span>
+                
+            </h2>
             <div>
               <span>!</span>
               <p>
