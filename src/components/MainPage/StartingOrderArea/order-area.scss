@@ -153,13 +153,22 @@
 }
 
 .input-points-container {
-  display: flex;
+  // display: flex;
   margin-bottom: 4rem;
   margin-top: 7px;
 }
 
+.input-points-container>div{
+  position: static;
+  margin: 10px 0;
+}
+
+.point{
+  width: 100%;
+}
+
 .point input {
-  width: 203.24px;
+  width: 100%;
   height: 49.06px;
 
   margin-right: 9px;
@@ -196,13 +205,6 @@
   background-position: 15px;
 }
 
-.point {
-  position: absolute;
-}
-
-.doff {
-  padding-left: 212px;
-}
 
 .react-geocoder-results {
   position: absolute;

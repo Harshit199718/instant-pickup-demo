@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './order-area.scss'
-import illustration from '../../../content-constants/images/Illustration-2824.svg'
+import illustration from '../../../content-constants/images/illustration.png'
 import van from '../../../content-constants/images/non-diesel-van.png'
 import Geocoder from 'react-mapbox-gl-geocoder'
 import { Link } from 'react-router-dom'
@@ -92,7 +92,7 @@ class OrderArea extends Component {
             </div>
           </div>
           <div>
-            <div className="select-type-container">
+            {/* <div className="select-type-container">
               <select
                 className="select-type-of-transportation"
                 onClick={this.onClick}
@@ -102,7 +102,7 @@ class OrderArea extends Component {
                 <option value="no">Total Home Removal</option>
                 <option value="yes">Few Items/Single Room</option>
               </select>
-            </div>
+            </div> */}
             <div className="input-points-container">
               <Geocoder
                 {...mapAccess}
