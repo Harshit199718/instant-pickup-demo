@@ -20,7 +20,7 @@ let startcords = []
 let endcords = []
 
 const MyInput = (props) => {
-  return <input {...props} required placeholder="Postcode or town" />
+  return <input {...props} required placeholder={props.placeholder} />
 }
 class OrderArea extends Component {
   constructor(props) {
@@ -111,7 +111,7 @@ class OrderArea extends Component {
                 hideOnSelect={true}
                 updateInputOnSelect={true}
                 className="point pickup"
-                inputComponent={MyInput}
+                inputComponent={() => <MyInput placeholder="Pick up address" />}
                 queryParams={queryParams}
               />
               <div className="doff">
@@ -122,7 +122,7 @@ class OrderArea extends Component {
                   hideOnSelect={true}
                   updateInputOnSelect={true}
                   className="point dropoff"
-                  inputComponent={MyInput}
+                  inputComponent={() => <MyInput placeholder="Drop off address" />}
                   queryParams={queryParams}
                 />
               </div>

@@ -7,6 +7,10 @@
   padding-left: 8%;
 }
 
+.order-container>div:nth-child(3){
+  width: 415px;
+}
+
 .h2-container {
   font-family: Encode Sans;
   font-style: normal;
@@ -240,7 +244,7 @@
   }
 
   .order-container>*{
-    width: 100%;
+    width: 100%!important;
   }
 
   .order-container .h2-container{
